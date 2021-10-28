@@ -18,7 +18,9 @@ const Stack = createStackNavigator();
 const App = () => (
 
   <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{
+    headerShown: false
+  }}>
       <Stack.Screen name="FirstScreen" component={FirstScreen} />	
       <Stack.Screen name="SearchScreen" component={SearchScreen} />
 	  <Stack.Screen name="ReisScreen" component={ReisScreen} />
