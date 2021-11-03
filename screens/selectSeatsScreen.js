@@ -247,8 +247,8 @@ export const SelectSeats = function({route , navigation}) {
 		  var idTerminal=customData.idTerminal; 
 	      var idR=JSON.stringify(idReis).replace(/["']/g,''); 
 	      var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Trip/Seat/Lock?id='+idR+'&num='+numPlace+'&idTerminal='+idTerminal;
-		  var username = 'p000892'; 
-          var password = '123456';
+		  var username = '**'; 
+          var password = '**';
           var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 		  
 		  fetch(session_url, {
@@ -289,8 +289,8 @@ export const SelectSeats = function({route , navigation}) {
 	    if(isOwn==true){
 		  var customData = require('./terminal.json');
 	      var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Trip/Seat/Unlock?id='+JSON.stringify(idReis)+'&num='+numPlace+'&idTerminal='+customData.idTerminal;
-		  var username = 'p000892'; 
-          var password = '123456';
+		  var username = '**'; 
+          var password = '**';
           var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 		  
 		  
@@ -363,8 +363,8 @@ export const SelectSeats = function({route , navigation}) {
   /*получить массив мест в автобусе (всех мест) для данного рейса*/
   async function getPlaces(session_url){ 
                       //setLoading(true);
-					  var username = 'p000892'; 
-                      var password = '123456';
+					  var username = '**'; 
+                      var password = '**';
                       var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 					  
 					  
@@ -412,8 +412,8 @@ export const SelectSeats = function({route , navigation}) {
 		            async function getTrip(){//получим данные по выбранному рейсу 
 					  if(selectSits.length==0) setDisabledButton(true);
 	                  else setDisabledButton(false);
-					  var username = 'p000892';
-                      var password = '123456';
+					  var username = '**';
+                      var password = '**';
                       var basicAuth = 'Basic ' + btoa(username + ':' + password);
                       var result;
 					  
