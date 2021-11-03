@@ -413,8 +413,8 @@ console.log('countPasNow=');console.log(countPasNow);
 	    if(isOwn==true){
 		  var customData = require('./terminal.json');
 	      var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Trip/Seat/Unlock?id='+JSON.stringify(idReis)+'&num='+numPlace+'&idTerminal='+customData.idTerminal;
-		  var username = 'p000892'; 
-          var password = '123456';
+		  var username = '*'; 
+          var password = '*';
           var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 		  fetch(session_url, {
                  method: "PUT",
@@ -463,8 +463,8 @@ console.log('countPasNow=');console.log(countPasNow);
                     
 		            async function getTrip(){//получим данные по выбранному рейсу 
 					 
-					  var username = 'p000892';
-                      var password = '123456';
+					  var username = '*';
+                      var password = '*';
                       var basicAuth = 'Basic ' + btoa(username + ':' + password);
                       var result;
 					  //setLoading(true);
@@ -614,7 +614,7 @@ console.log('flagDoc=');console.log(flagDoc);
   const getData = function(){
 	var isAllRight=checkParams();  
 	let submit_=[];
-	var customData = require('./terminal.json');
+	var customData = require('./***.json');
     if(isAllRight==true){
       if(isOwn==true)		
 	    submit_={
@@ -679,8 +679,8 @@ console.log('flagDoc=');console.log(flagDoc);
 	  if(returnPay==0){ 
 
 	       var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Order/Register';
-	       var username = 'p000892'; 
-           var password = '123456';
+	       var username = '**'; 
+           var password = '**';
            var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 		 
 		   console.log('submitData on server=');console.log(objData);
@@ -774,8 +774,8 @@ console.log('flagDoc=');console.log(flagDoc);
  /*получить список видов документов*/
   const getDoc = async (val , func , index) => {  
     var session_url = 'https://dev.gobus.online/api/Terminal/0.0.1/Util/Documents';		
-    var username = 'p000892'; 
-    var password = '123456';
+    var username = '**'; 
+    var password = '**';
     var basicAuth = 'Basic ' + btoa(username + ':' + password); 	
     fetch(session_url, {
                       method: "GET",
@@ -820,8 +820,8 @@ console.log('flagDoc=');console.log(flagDoc);
   /*получить список гражданств*/
   const getGrazd = async (val , func, index) => {
 	var session_url= 'https://dev.gobus.online/api/Terminal/0.0.1/Util/Search/Country?query='+val;
-    var username = 'p000892'; 
-    var password = '123456';
+    var username = '**'; 
+    var password = '**';
     var basicAuth = 'Basic ' + btoa(username + ':' + password); 
     
 	fetch(session_url, {
