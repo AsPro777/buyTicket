@@ -231,8 +231,8 @@ export const PassengersInfoScreen = function({route , navigation} ) {
 		var a=JSON.parse(item); 
 		 session_url = 'https://dev.gobus.online/api/Terminal/0.0.1/Order?idOrder='+JSON.stringify(a.idOrder);
 	     async function getOrder(session_url){//получим данные по выбранному рейсу 
-					  var username = 'p000892';
-                      var password = '123456';
+					  var username = '*';
+                      var password = '*';
                       var basicAuth = 'Basic ' + btoa(username + ':' + password);
 					  
 					  fetch(session_url, {
@@ -362,8 +362,8 @@ export const PassengersInfoScreen = function({route , navigation} ) {
    
    async function cancelTickets(id_order,id_tickets){ 
 	      var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Order/CancelTickets';
-		  var username = 'p000892'; 
-          var password = '123456';
+		  var username = '*'; 
+          var password = '*';
           var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 		  var objData = {'idOrder': id_order,'idTickets': id_tickets};
 
