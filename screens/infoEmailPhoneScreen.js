@@ -215,8 +215,8 @@ export const InfoEmailPhoneScreen = function({route , navigation}) {
 	                timerRef.current = tim;*/
 					
 		            async function getTrip(){//получим данные по выбранному рейсу 
-					  var username = 'p000892';
-                      var password = '123456';
+					  var username = '*';
+                      var password = '*';
                       var basicAuth = 'Basic ' + btoa(username + ':' + password);
                       var result;
 					  setLoading(true);
