@@ -190,8 +190,8 @@ export const SearchScreen = function({navigation , route} ) {
                //const res=await axios('https://dev.gobus.online/api/Terminal/0.0.1/Ping?value='+testPingText); 
 			   
 			   
-			   var username = 'p000892'; 
-               var password = '123456'; 
+			   var username = '**'; 
+               var password = '**'; 
                var basicAuth = 'Basic ' + btoa(username + ':' + password);
 			   setLoading(true);
 			   var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Ping?value='+testPingText;
@@ -312,8 +312,8 @@ export const SearchScreen = function({navigation , route} ) {
 	  
 	  
 	  var session_url='https://dev.gobus.online/api/Terminal/0.0.1/Util/Search/City?query='+val;
-	  var username = 'p000892'; 
-      var password = '123456';
+	  var username = '**'; 
+      var password = '**';
       var basicAuth = 'Basic ' + btoa(username + ':' + password); 
 	  fetch(session_url, {
                       method: "GET",
